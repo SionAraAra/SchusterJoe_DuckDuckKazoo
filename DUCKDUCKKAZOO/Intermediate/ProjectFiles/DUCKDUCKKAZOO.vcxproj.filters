@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\DUCKDUCKKAZOO.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\DUCKDUCKKAZOO.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\DUCKDUCKKAZOOEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\DUCKDUCKKAZOO">
+      <UniqueIdentifier>{879158BA-8789-3FED-9532-5CA364F09608}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOO.Build.cs">
+      <Filter>Source\DUCKDUCKKAZOO</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOO.cpp">
+      <Filter>Source\DUCKDUCKKAZOO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOO.h">
+      <Filter>Source\DUCKDUCKKAZOO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOCharacter.cpp">
+      <Filter>Source\DUCKDUCKKAZOO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOCharacter.h">
+      <Filter>Source\DUCKDUCKKAZOO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOGameMode.cpp">
+      <Filter>Source\DUCKDUCKKAZOO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOGameMode.h">
+      <Filter>Source\DUCKDUCKKAZOO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOPickUpComponent.cpp">
+      <Filter>Source\DUCKDUCKKAZOO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOPickUpComponent.h">
+      <Filter>Source\DUCKDUCKKAZOO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOProjectile.cpp">
+      <Filter>Source\DUCKDUCKKAZOO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOProjectile.h">
+      <Filter>Source\DUCKDUCKKAZOO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOWeaponComponent.cpp">
+      <Filter>Source\DUCKDUCKKAZOO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOWeaponComponent.h">
+      <Filter>Source\DUCKDUCKKAZOO</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
