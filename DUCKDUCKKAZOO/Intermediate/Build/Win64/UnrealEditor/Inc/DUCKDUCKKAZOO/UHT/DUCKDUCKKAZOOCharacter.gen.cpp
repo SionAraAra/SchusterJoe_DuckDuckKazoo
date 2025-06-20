@@ -6,10 +6,12 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "DUCKDUCKKAZOO/DUCKDUCKKAZOOCharacter.h"
+
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
 void EmptyLinkFunctionForGeneratedCodeDUCKDUCKKAZOOCharacter() {}
 
-// Begin Cross Module References
+// ********** Begin Cross Module References ********************************************************
 DUCKDUCKKAZOO_API UClass* Z_Construct_UClass_ADUCKDUCKKAZOOCharacter();
 DUCKDUCKKAZOO_API UClass* Z_Construct_UClass_ADUCKDUCKKAZOOCharacter_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
@@ -18,16 +20,40 @@ ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputAction_NoRegister();
 ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
 UPackage* Z_Construct_UPackage__Script_DUCKDUCKKAZOO();
-// End Cross Module References
+// ********** End Cross Module References **********************************************************
 
-// Begin Class ADUCKDUCKKAZOOCharacter
+// ********** Begin Class ADUCKDUCKKAZOOCharacter **************************************************
 void ADUCKDUCKKAZOOCharacter::StaticRegisterNativesADUCKDUCKKAZOOCharacter()
 {
 }
-IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(ADUCKDUCKKAZOOCharacter);
+FClassRegistrationInfo Z_Registration_Info_UClass_ADUCKDUCKKAZOOCharacter;
+UClass* ADUCKDUCKKAZOOCharacter::GetPrivateStaticClass()
+{
+	using TClass = ADUCKDUCKKAZOOCharacter;
+	if (!Z_Registration_Info_UClass_ADUCKDUCKKAZOOCharacter.InnerSingleton)
+	{
+		GetPrivateStaticClassBody(
+			StaticPackage(),
+			TEXT("DUCKDUCKKAZOOCharacter"),
+			Z_Registration_Info_UClass_ADUCKDUCKKAZOOCharacter.InnerSingleton,
+			StaticRegisterNativesADUCKDUCKKAZOOCharacter,
+			sizeof(TClass),
+			alignof(TClass),
+			TClass::StaticClassFlags,
+			TClass::StaticClassCastFlags(),
+			TClass::StaticConfigName(),
+			(UClass::ClassConstructorType)InternalConstructor<TClass>,
+			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+			&TClass::Super::StaticClass,
+			&TClass::WithinClass::StaticClass
+		);
+	}
+	return Z_Registration_Info_UClass_ADUCKDUCKKAZOOCharacter.InnerSingleton;
+}
 UClass* Z_Construct_UClass_ADUCKDUCKKAZOOCharacter_NoRegister()
 {
-	return ADUCKDUCKKAZOOCharacter::StaticClass();
+	return ADUCKDUCKKAZOOCharacter::GetPrivateStaticClass();
 }
 struct Z_Construct_UClass_ADUCKDUCKKAZOOCharacter_Statics
 {
@@ -151,7 +177,7 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_ADUCKDUCKKAZOOCharacter
 	0,
 	UE_ARRAY_COUNT(Z_Construct_UClass_ADUCKDUCKKAZOOCharacter_Statics::PropPointers),
 	0,
-	0x008000A4u,
+	0x008001A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ADUCKDUCKKAZOOCharacter_Statics::Class_MetaDataParams), Z_Construct_UClass_ADUCKDUCKKAZOOCharacter_Statics::Class_MetaDataParams)
 };
 UClass* Z_Construct_UClass_ADUCKDUCKKAZOOCharacter()
@@ -162,24 +188,21 @@ UClass* Z_Construct_UClass_ADUCKDUCKKAZOOCharacter()
 	}
 	return Z_Registration_Info_UClass_ADUCKDUCKKAZOOCharacter.OuterSingleton;
 }
-template<> DUCKDUCKKAZOO_API UClass* StaticClass<ADUCKDUCKKAZOOCharacter>()
-{
-	return ADUCKDUCKKAZOOCharacter::StaticClass();
-}
 DEFINE_VTABLE_PTR_HELPER_CTOR(ADUCKDUCKKAZOOCharacter);
 ADUCKDUCKKAZOOCharacter::~ADUCKDUCKKAZOOCharacter() {}
-// End Class ADUCKDUCKKAZOOCharacter
+// ********** End Class ADUCKDUCKKAZOOCharacter ****************************************************
 
-// Begin Registration
-struct Z_CompiledInDeferFile_FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOCharacter_h_Statics
+// ********** Begin Registration *******************************************************************
+struct Z_CompiledInDeferFile_FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOCharacter_h__Script_DUCKDUCKKAZOO_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ADUCKDUCKKAZOOCharacter, ADUCKDUCKKAZOOCharacter::StaticClass, TEXT("ADUCKDUCKKAZOOCharacter"), &Z_Registration_Info_UClass_ADUCKDUCKKAZOOCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ADUCKDUCKKAZOOCharacter), 3969663753U) },
+		{ Z_Construct_UClass_ADUCKDUCKKAZOOCharacter, ADUCKDUCKKAZOOCharacter::StaticClass, TEXT("ADUCKDUCKKAZOOCharacter"), &Z_Registration_Info_UClass_ADUCKDUCKKAZOOCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ADUCKDUCKKAZOOCharacter), 1408078568U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOCharacter_h_1651837792(TEXT("/Script/DUCKDUCKKAZOO"),
-	Z_CompiledInDeferFile_FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOCharacter_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOCharacter_h__Script_DUCKDUCKKAZOO_4067138616(TEXT("/Script/DUCKDUCKKAZOO"),
+	Z_CompiledInDeferFile_FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOCharacter_h__Script_DUCKDUCKKAZOO_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOCharacter_h__Script_DUCKDUCKKAZOO_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
-// End Registration
+// ********** End Registration *********************************************************************
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

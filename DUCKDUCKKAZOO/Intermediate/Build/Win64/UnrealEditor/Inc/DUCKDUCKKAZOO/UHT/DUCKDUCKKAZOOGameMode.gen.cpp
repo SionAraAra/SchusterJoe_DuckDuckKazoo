@@ -6,24 +6,50 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "DUCKDUCKKAZOO/DUCKDUCKKAZOOGameMode.h"
+
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
 void EmptyLinkFunctionForGeneratedCodeDUCKDUCKKAZOOGameMode() {}
 
-// Begin Cross Module References
+// ********** Begin Cross Module References ********************************************************
 DUCKDUCKKAZOO_API UClass* Z_Construct_UClass_ADUCKDUCKKAZOOGameMode();
 DUCKDUCKKAZOO_API UClass* Z_Construct_UClass_ADUCKDUCKKAZOOGameMode_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_AGameModeBase();
 UPackage* Z_Construct_UPackage__Script_DUCKDUCKKAZOO();
-// End Cross Module References
+// ********** End Cross Module References **********************************************************
 
-// Begin Class ADUCKDUCKKAZOOGameMode
+// ********** Begin Class ADUCKDUCKKAZOOGameMode ***************************************************
 void ADUCKDUCKKAZOOGameMode::StaticRegisterNativesADUCKDUCKKAZOOGameMode()
 {
 }
-IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(ADUCKDUCKKAZOOGameMode);
+FClassRegistrationInfo Z_Registration_Info_UClass_ADUCKDUCKKAZOOGameMode;
+UClass* ADUCKDUCKKAZOOGameMode::GetPrivateStaticClass()
+{
+	using TClass = ADUCKDUCKKAZOOGameMode;
+	if (!Z_Registration_Info_UClass_ADUCKDUCKKAZOOGameMode.InnerSingleton)
+	{
+		GetPrivateStaticClassBody(
+			StaticPackage(),
+			TEXT("DUCKDUCKKAZOOGameMode"),
+			Z_Registration_Info_UClass_ADUCKDUCKKAZOOGameMode.InnerSingleton,
+			StaticRegisterNativesADUCKDUCKKAZOOGameMode,
+			sizeof(TClass),
+			alignof(TClass),
+			TClass::StaticClassFlags,
+			TClass::StaticClassCastFlags(),
+			TClass::StaticConfigName(),
+			(UClass::ClassConstructorType)InternalConstructor<TClass>,
+			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+			&TClass::Super::StaticClass,
+			&TClass::WithinClass::StaticClass
+		);
+	}
+	return Z_Registration_Info_UClass_ADUCKDUCKKAZOOGameMode.InnerSingleton;
+}
 UClass* Z_Construct_UClass_ADUCKDUCKKAZOOGameMode_NoRegister()
 {
-	return ADUCKDUCKKAZOOGameMode::StaticClass();
+	return ADUCKDUCKKAZOOGameMode::GetPrivateStaticClass();
 }
 struct Z_Construct_UClass_ADUCKDUCKKAZOOGameMode_Statics
 {
@@ -58,7 +84,7 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_ADUCKDUCKKAZOOGameMode_
 	0,
 	0,
 	0,
-	0x008802ACu,
+	0x008803ACu,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ADUCKDUCKKAZOOGameMode_Statics::Class_MetaDataParams), Z_Construct_UClass_ADUCKDUCKKAZOOGameMode_Statics::Class_MetaDataParams)
 };
 UClass* Z_Construct_UClass_ADUCKDUCKKAZOOGameMode()
@@ -69,24 +95,21 @@ UClass* Z_Construct_UClass_ADUCKDUCKKAZOOGameMode()
 	}
 	return Z_Registration_Info_UClass_ADUCKDUCKKAZOOGameMode.OuterSingleton;
 }
-template<> DUCKDUCKKAZOO_API UClass* StaticClass<ADUCKDUCKKAZOOGameMode>()
-{
-	return ADUCKDUCKKAZOOGameMode::StaticClass();
-}
 DEFINE_VTABLE_PTR_HELPER_CTOR(ADUCKDUCKKAZOOGameMode);
 ADUCKDUCKKAZOOGameMode::~ADUCKDUCKKAZOOGameMode() {}
-// End Class ADUCKDUCKKAZOOGameMode
+// ********** End Class ADUCKDUCKKAZOOGameMode *****************************************************
 
-// Begin Registration
-struct Z_CompiledInDeferFile_FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_h_Statics
+// ********** Begin Registration *******************************************************************
+struct Z_CompiledInDeferFile_FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_h__Script_DUCKDUCKKAZOO_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ADUCKDUCKKAZOOGameMode, ADUCKDUCKKAZOOGameMode::StaticClass, TEXT("ADUCKDUCKKAZOOGameMode"), &Z_Registration_Info_UClass_ADUCKDUCKKAZOOGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ADUCKDUCKKAZOOGameMode), 2336180287U) },
+		{ Z_Construct_UClass_ADUCKDUCKKAZOOGameMode, ADUCKDUCKKAZOOGameMode::StaticClass, TEXT("ADUCKDUCKKAZOOGameMode"), &Z_Registration_Info_UClass_ADUCKDUCKKAZOOGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ADUCKDUCKKAZOOGameMode), 1694762536U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_h_1482950790(TEXT("/Script/DUCKDUCKKAZOO"),
-	Z_CompiledInDeferFile_FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_h__Script_DUCKDUCKKAZOO_234913683(TEXT("/Script/DUCKDUCKKAZOO"),
+	Z_CompiledInDeferFile_FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_h__Script_DUCKDUCKKAZOO_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_h__Script_DUCKDUCKKAZOO_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
-// End Registration
+// ********** End Registration *********************************************************************
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -1,17 +1,17 @@
-"C:\Users\joesc\Documents\DuckDuckKazoo\DUCKDUCKKAZOO\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOCharacter.cpp"
-/FI"C:\Users\joesc\Documents\DuckDuckKazoo\DUCKDUCKKAZOO\Intermediate\Build\Win64\x64\DUCKDUCKKAZOOEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/FI"C:\Users\joesc\Documents\DuckDuckKazoo\DUCKDUCKKAZOO\Intermediate\Build\Win64\x64\UnrealEditor\Development\DUCKDUCKKAZOO\Definitions.DUCKDUCKKAZOO.h"
-/Yu"C:\Users\joesc\Documents\DuckDuckKazoo\DUCKDUCKKAZOO\Intermediate\Build\Win64\x64\DUCKDUCKKAZOOEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/Fp"C:\Users\joesc\Documents\DuckDuckKazoo\DUCKDUCKKAZOO\Intermediate\Build\Win64\x64\DUCKDUCKKAZOOEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
-/Fo"C:\Users\joesc\Documents\DuckDuckKazoo\DUCKDUCKKAZOO\Intermediate\Build\Win64\x64\UnrealEditor\Development\DUCKDUCKKAZOO\DUCKDUCKKAZOOCharacter.cpp.obj"
-/experimental:log "C:\Users\joesc\Documents\DuckDuckKazoo\DUCKDUCKKAZOO\Intermediate\Build\Win64\x64\UnrealEditor\Development\DUCKDUCKKAZOO\DUCKDUCKKAZOOCharacter.cpp.sarif"
-/sourceDependencies "C:\Users\joesc\Documents\DuckDuckKazoo\DUCKDUCKKAZOO\Intermediate\Build\Win64\x64\UnrealEditor\Development\DUCKDUCKKAZOO\DUCKDUCKKAZOOCharacter.cpp.dep.json"
-@"C:\Users\joesc\Documents\DuckDuckKazoo\DUCKDUCKKAZOO\Intermediate\Build\Win64\x64\UnrealEditor\Development\DUCKDUCKKAZOO\DUCKDUCKKAZOO.Shared.rsp"
-/d2ssa-cfg-question-
+"C:/Users/joesc/Documents/GitHub/DuckDuckKazoo/DUCKDUCKKAZOO/Source/DUCKDUCKKAZOO/DUCKDUCKKAZOOCharacter.cpp"
+@"C:/Users/joesc/Documents/GitHub/DuckDuckKazoo/DUCKDUCKKAZOO/Intermediate/Build/Win64/x64/UnrealEditor/Development/DUCKDUCKKAZOO/DUCKDUCKKAZOO.Shared.rsp"
+/FI"C:/Users/joesc/Documents/GitHub/DuckDuckKazoo/DUCKDUCKKAZOO/Intermediate/Build/Win64/x64/DUCKDUCKKAZOOEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_5.h"
+/FI"C:/Users/joesc/Documents/GitHub/DuckDuckKazoo/DUCKDUCKKAZOO/Intermediate/Build/Win64/x64/UnrealEditor/Development/DUCKDUCKKAZOO/Definitions.DUCKDUCKKAZOO.h"
+/Yu"C:/Users/joesc/Documents/GitHub/DuckDuckKazoo/DUCKDUCKKAZOO/Intermediate/Build/Win64/x64/DUCKDUCKKAZOOEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_5.h"
+/Fp"C:/Users/joesc/Documents/GitHub/DuckDuckKazoo/DUCKDUCKKAZOO/Intermediate/Build/Win64/x64/DUCKDUCKKAZOOEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_5.h.pch"
+/Fo"C:/Users/joesc/Documents/GitHub/DuckDuckKazoo/DUCKDUCKKAZOO/Intermediate/Build/Win64/x64/UnrealEditor/Development/DUCKDUCKKAZOO/DUCKDUCKKAZOOCharacter.cpp.obj"
+/experimental:log "C:/Users/joesc/Documents/GitHub/DuckDuckKazoo/DUCKDUCKKAZOO/Intermediate/Build/Win64/x64/UnrealEditor/Development/DUCKDUCKKAZOO/DUCKDUCKKAZOOCharacter.cpp.sarif"
+/sourceDependencies "C:/Users/joesc/Documents/GitHub/DuckDuckKazoo/DUCKDUCKKAZOO/Intermediate/Build/Win64/x64/UnrealEditor/Development/DUCKDUCKKAZOO/DUCKDUCKKAZOOCharacter.cpp.dep.json"
 /Zc:inline
 /nologo
 /Oi
 /FC
+/diagnostics:caret
 /c
 /Gw
 /Gy
@@ -39,15 +39,14 @@
 /fp:fast
 /Zo
 /Zp8
+/W4
 /we4456
 /we4458
 /we4459
-/we4668
 /wd4244
 /wd4838
 /TP
 /GR-
-/W4
 /std:c++20
 /Zc:preprocessor
 /wd5054

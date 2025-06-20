@@ -6,10 +6,12 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "DUCKDUCKKAZOO/DUCKDUCKKAZOOWeaponComponent.h"
+
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
 void EmptyLinkFunctionForGeneratedCodeDUCKDUCKKAZOOWeaponComponent() {}
 
-// Begin Cross Module References
+// ********** Begin Cross Module References ********************************************************
 COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 DUCKDUCKKAZOO_API UClass* Z_Construct_UClass_ADUCKDUCKKAZOOCharacter_NoRegister();
@@ -23,9 +25,9 @@ ENGINE_API UEnum* Z_Construct_UEnum_Engine_EEndPlayReason();
 ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputAction_NoRegister();
 ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
 UPackage* Z_Construct_UPackage__Script_DUCKDUCKKAZOO();
-// End Cross Module References
+// ********** End Cross Module References **********************************************************
 
-// Begin Class UDUCKDUCKKAZOOWeaponComponent Function AttachWeapon
+// ********** Begin Class UDUCKDUCKKAZOOWeaponComponent Function AttachWeapon **********************
 struct Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_AttachWeapon_Statics
 {
 	struct DUCKDUCKKAZOOWeaponComponent_eventAttachWeapon_Parms
@@ -62,7 +64,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UDUCKD
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_AttachWeapon_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_AttachWeapon_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_AttachWeapon_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UDUCKDUCKKAZOOWeaponComponent, nullptr, "AttachWeapon", nullptr, nullptr, Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_AttachWeapon_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_AttachWeapon_Statics::PropPointers), sizeof(Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_AttachWeapon_Statics::DUCKDUCKKAZOOWeaponComponent_eventAttachWeapon_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_AttachWeapon_Statics::Function_MetaDataParams), Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_AttachWeapon_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_AttachWeapon_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UDUCKDUCKKAZOOWeaponComponent, nullptr, "AttachWeapon", Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_AttachWeapon_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_AttachWeapon_Statics::PropPointers), sizeof(Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_AttachWeapon_Statics::DUCKDUCKKAZOOWeaponComponent_eventAttachWeapon_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_AttachWeapon_Statics::Function_MetaDataParams), Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_AttachWeapon_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_AttachWeapon_Statics::DUCKDUCKKAZOOWeaponComponent_eventAttachWeapon_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_AttachWeapon()
 {
@@ -81,9 +83,9 @@ DEFINE_FUNCTION(UDUCKDUCKKAZOOWeaponComponent::execAttachWeapon)
 	*(bool*)Z_Param__Result=P_THIS->AttachWeapon(Z_Param_TargetCharacter);
 	P_NATIVE_END;
 }
-// End Class UDUCKDUCKKAZOOWeaponComponent Function AttachWeapon
+// ********** End Class UDUCKDUCKKAZOOWeaponComponent Function AttachWeapon ************************
 
-// Begin Class UDUCKDUCKKAZOOWeaponComponent Function EndPlay
+// ********** Begin Class UDUCKDUCKKAZOOWeaponComponent Function EndPlay ***************************
 struct Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_EndPlay_Statics
 {
 	struct DUCKDUCKKAZOOWeaponComponent_eventEndPlay_Parms
@@ -113,7 +115,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UDUCKD
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_EndPlay_Statics::NewProp_EndPlayReason,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_EndPlay_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_EndPlay_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UDUCKDUCKKAZOOWeaponComponent, nullptr, "EndPlay", nullptr, nullptr, Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_EndPlay_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_EndPlay_Statics::PropPointers), sizeof(Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_EndPlay_Statics::DUCKDUCKKAZOOWeaponComponent_eventEndPlay_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080400, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_EndPlay_Statics::Function_MetaDataParams), Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_EndPlay_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_EndPlay_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UDUCKDUCKKAZOOWeaponComponent, nullptr, "EndPlay", Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_EndPlay_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_EndPlay_Statics::PropPointers), sizeof(Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_EndPlay_Statics::DUCKDUCKKAZOOWeaponComponent_eventEndPlay_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080400, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_EndPlay_Statics::Function_MetaDataParams), Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_EndPlay_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_EndPlay_Statics::DUCKDUCKKAZOOWeaponComponent_eventEndPlay_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_EndPlay()
 {
@@ -132,9 +134,9 @@ DEFINE_FUNCTION(UDUCKDUCKKAZOOWeaponComponent::execEndPlay)
 	P_THIS->EndPlay(EEndPlayReason::Type(Z_Param_EndPlayReason));
 	P_NATIVE_END;
 }
-// End Class UDUCKDUCKKAZOOWeaponComponent Function EndPlay
+// ********** End Class UDUCKDUCKKAZOOWeaponComponent Function EndPlay *****************************
 
-// Begin Class UDUCKDUCKKAZOOWeaponComponent Function Fire
+// ********** Begin Class UDUCKDUCKKAZOOWeaponComponent Function Fire ******************************
 struct Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_Fire_Statics
 {
 #if WITH_METADATA
@@ -151,7 +153,7 @@ struct Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_Fire_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_Fire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UDUCKDUCKKAZOOWeaponComponent, nullptr, "Fire", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_Fire_Statics::Function_MetaDataParams), Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_Fire_Statics::Function_MetaDataParams) };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_Fire_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UDUCKDUCKKAZOOWeaponComponent, nullptr, "Fire", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_Fire_Statics::Function_MetaDataParams), Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_Fire_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_Fire()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -168,9 +170,9 @@ DEFINE_FUNCTION(UDUCKDUCKKAZOOWeaponComponent::execFire)
 	P_THIS->Fire();
 	P_NATIVE_END;
 }
-// End Class UDUCKDUCKKAZOOWeaponComponent Function Fire
+// ********** End Class UDUCKDUCKKAZOOWeaponComponent Function Fire ********************************
 
-// Begin Class UDUCKDUCKKAZOOWeaponComponent
+// ********** Begin Class UDUCKDUCKKAZOOWeaponComponent ********************************************
 void UDUCKDUCKKAZOOWeaponComponent::StaticRegisterNativesUDUCKDUCKKAZOOWeaponComponent()
 {
 	UClass* Class = UDUCKDUCKKAZOOWeaponComponent::StaticClass();
@@ -181,10 +183,34 @@ void UDUCKDUCKKAZOOWeaponComponent::StaticRegisterNativesUDUCKDUCKKAZOOWeaponCom
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
-IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UDUCKDUCKKAZOOWeaponComponent);
+FClassRegistrationInfo Z_Registration_Info_UClass_UDUCKDUCKKAZOOWeaponComponent;
+UClass* UDUCKDUCKKAZOOWeaponComponent::GetPrivateStaticClass()
+{
+	using TClass = UDUCKDUCKKAZOOWeaponComponent;
+	if (!Z_Registration_Info_UClass_UDUCKDUCKKAZOOWeaponComponent.InnerSingleton)
+	{
+		GetPrivateStaticClassBody(
+			StaticPackage(),
+			TEXT("DUCKDUCKKAZOOWeaponComponent"),
+			Z_Registration_Info_UClass_UDUCKDUCKKAZOOWeaponComponent.InnerSingleton,
+			StaticRegisterNativesUDUCKDUCKKAZOOWeaponComponent,
+			sizeof(TClass),
+			alignof(TClass),
+			TClass::StaticClassFlags,
+			TClass::StaticClassCastFlags(),
+			TClass::StaticConfigName(),
+			(UClass::ClassConstructorType)InternalConstructor<TClass>,
+			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+			&TClass::Super::StaticClass,
+			&TClass::WithinClass::StaticClass
+		);
+	}
+	return Z_Registration_Info_UClass_UDUCKDUCKKAZOOWeaponComponent.InnerSingleton;
+}
 UClass* Z_Construct_UClass_UDUCKDUCKKAZOOWeaponComponent_NoRegister()
 {
-	return UDUCKDUCKKAZOOWeaponComponent::StaticClass();
+	return UDUCKDUCKKAZOOWeaponComponent::GetPrivateStaticClass();
 }
 struct Z_Construct_UClass_UDUCKDUCKKAZOOWeaponComponent_Statics
 {
@@ -270,9 +296,9 @@ struct Z_Construct_UClass_UDUCKDUCKKAZOOWeaponComponent_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_AttachWeapon, "AttachWeapon" }, // 1338897195
-		{ &Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_EndPlay, "EndPlay" }, // 1115714606
-		{ &Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_Fire, "Fire" }, // 3632565039
+		{ &Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_AttachWeapon, "AttachWeapon" }, // 1947686528
+		{ &Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_EndPlay, "EndPlay" }, // 3671051669
+		{ &Z_Construct_UFunction_UDUCKDUCKKAZOOWeaponComponent_Fire, "Fire" }, // 929854247
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -323,24 +349,21 @@ UClass* Z_Construct_UClass_UDUCKDUCKKAZOOWeaponComponent()
 	}
 	return Z_Registration_Info_UClass_UDUCKDUCKKAZOOWeaponComponent.OuterSingleton;
 }
-template<> DUCKDUCKKAZOO_API UClass* StaticClass<UDUCKDUCKKAZOOWeaponComponent>()
-{
-	return UDUCKDUCKKAZOOWeaponComponent::StaticClass();
-}
 DEFINE_VTABLE_PTR_HELPER_CTOR(UDUCKDUCKKAZOOWeaponComponent);
 UDUCKDUCKKAZOOWeaponComponent::~UDUCKDUCKKAZOOWeaponComponent() {}
-// End Class UDUCKDUCKKAZOOWeaponComponent
+// ********** End Class UDUCKDUCKKAZOOWeaponComponent **********************************************
 
-// Begin Registration
-struct Z_CompiledInDeferFile_FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOWeaponComponent_h_Statics
+// ********** Begin Registration *******************************************************************
+struct Z_CompiledInDeferFile_FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOWeaponComponent_h__Script_DUCKDUCKKAZOO_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UDUCKDUCKKAZOOWeaponComponent, UDUCKDUCKKAZOOWeaponComponent::StaticClass, TEXT("UDUCKDUCKKAZOOWeaponComponent"), &Z_Registration_Info_UClass_UDUCKDUCKKAZOOWeaponComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDUCKDUCKKAZOOWeaponComponent), 3829277411U) },
+		{ Z_Construct_UClass_UDUCKDUCKKAZOOWeaponComponent, UDUCKDUCKKAZOOWeaponComponent::StaticClass, TEXT("UDUCKDUCKKAZOOWeaponComponent"), &Z_Registration_Info_UClass_UDUCKDUCKKAZOOWeaponComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDUCKDUCKKAZOOWeaponComponent), 678450472U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOWeaponComponent_h_363009995(TEXT("/Script/DUCKDUCKKAZOO"),
-	Z_CompiledInDeferFile_FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOWeaponComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOWeaponComponent_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOWeaponComponent_h__Script_DUCKDUCKKAZOO_3415893444(TEXT("/Script/DUCKDUCKKAZOO"),
+	Z_CompiledInDeferFile_FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOWeaponComponent_h__Script_DUCKDUCKKAZOO_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOWeaponComponent_h__Script_DUCKDUCKKAZOO_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
-// End Registration
+// ********** End Registration *********************************************************************
+
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -5,50 +5,56 @@
 ===========================================================================*/
 
 // IWYU pragma: private, include "DUCKDUCKKAZOOGameMode.h"
-#include "UObject/ObjectMacros.h"
-#include "UObject/ScriptMacros.h"
 
-PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #ifdef DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_generated_h
 #error "DUCKDUCKKAZOOGameMode.generated.h already included, missing '#pragma once' in DUCKDUCKKAZOOGameMode.h"
 #endif
 #define DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_generated_h
 
-#define FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_h_12_INCLASS_NO_PURE_DECLS \
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+
+// ********** Begin Class ADUCKDUCKKAZOOGameMode ***************************************************
+DUCKDUCKKAZOO_API UClass* Z_Construct_UClass_ADUCKDUCKKAZOOGameMode_NoRegister();
+
+#define FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesADUCKDUCKKAZOOGameMode(); \
 	friend struct Z_Construct_UClass_ADUCKDUCKKAZOOGameMode_Statics; \
+	static UClass* GetPrivateStaticClass(); \
+	friend DUCKDUCKKAZOO_API UClass* Z_Construct_UClass_ADUCKDUCKKAZOOGameMode_NoRegister(); \
 public: \
-	DECLARE_CLASS(ADUCKDUCKKAZOOGameMode, AGameModeBase, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/DUCKDUCKKAZOO"), DUCKDUCKKAZOO_API) \
+	DECLARE_CLASS2(ADUCKDUCKKAZOOGameMode, AGameModeBase, COMPILED_IN_FLAGS(0 | CLASS_Transient | CLASS_Config), CASTCLASS_None, TEXT("/Script/DUCKDUCKKAZOO"), Z_Construct_UClass_ADUCKDUCKKAZOOGameMode_NoRegister) \
 	DECLARE_SERIALIZER(ADUCKDUCKKAZOOGameMode)
 
 
-#define FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_h_12_ENHANCED_CONSTRUCTORS \
-private: \
-	/** Private move- and copy-constructors, should never be used */ \
-	ADUCKDUCKKAZOOGameMode(ADUCKDUCKKAZOOGameMode&&); \
-	ADUCKDUCKKAZOOGameMode(const ADUCKDUCKKAZOOGameMode&); \
-public: \
+#define FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_h_12_ENHANCED_CONSTRUCTORS \
+	/** Deleted move- and copy-constructors, should never be used */ \
+	ADUCKDUCKKAZOOGameMode(ADUCKDUCKKAZOOGameMode&&) = delete; \
+	ADUCKDUCKKAZOOGameMode(const ADUCKDUCKKAZOOGameMode&) = delete; \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(DUCKDUCKKAZOO_API, ADUCKDUCKKAZOOGameMode); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADUCKDUCKKAZOOGameMode); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ADUCKDUCKKAZOOGameMode) \
 	DUCKDUCKKAZOO_API virtual ~ADUCKDUCKKAZOOGameMode();
 
 
-#define FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_h_9_PROLOG
-#define FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_h_12_GENERATED_BODY \
+#define FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_h_9_PROLOG
+#define FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_h_12_INCLASS_NO_PURE_DECLS \
-	FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_h_12_ENHANCED_CONSTRUCTORS \
+	FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_h_12_INCLASS_NO_PURE_DECLS \
+	FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-template<> DUCKDUCKKAZOO_API UClass* StaticClass<class ADUCKDUCKKAZOOGameMode>();
+class ADUCKDUCKKAZOOGameMode;
+
+// ********** End Class ADUCKDUCKKAZOOGameMode *****************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_h
-
+#define CURRENT_FILE_ID FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOGameMode_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

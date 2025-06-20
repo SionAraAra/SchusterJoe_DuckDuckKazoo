@@ -1,3 +1,6 @@
-// PCH for Runtime/Core/Public/CoreSharedPCH.h
-#include "C:/Users/joesc/Documents/DuckDuckKazoo/DUCKDUCKKAZOO/Intermediate/Build/Win64/x64/DUCKDUCKKAZOOEditor/Development/Core/SharedDefinitions.Core.Cpp20.h"
-#include "Runtime/Core/Public/CoreSharedPCH.h"
+// PCH for CoreSharedPCH.h
+#include "SharedDefinitions.Core.Cpp20.h"
+#include "CoreSharedPCH.h"
+#ifdef __ISPC_ALIGN__
+#error ispc.generated.h files are not allowed in precompiled headers (This is a build time optimization to reduce action dependencies)
+#endif

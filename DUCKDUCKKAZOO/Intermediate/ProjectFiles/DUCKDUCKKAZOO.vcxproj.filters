@@ -11,6 +11,7 @@
     <None Include="..\..\Source\DUCKDUCKKAZOOEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitignore" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -38,38 +39,38 @@
     <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOO.cpp">
       <Filter>Source\DUCKDUCKKAZOO</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOO.h">
+    <ClInclude Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOO.h">
       <Filter>Source\DUCKDUCKKAZOO</Filter>
-    </ClCompile>
+    </ClInclude>
     <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOCharacter.cpp">
       <Filter>Source\DUCKDUCKKAZOO</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOCharacter.h">
+    <ClInclude Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOCharacter.h">
       <Filter>Source\DUCKDUCKKAZOO</Filter>
-    </ClCompile>
+    </ClInclude>
     <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOGameMode.cpp">
       <Filter>Source\DUCKDUCKKAZOO</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOGameMode.h">
+    <ClInclude Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOGameMode.h">
       <Filter>Source\DUCKDUCKKAZOO</Filter>
-    </ClCompile>
+    </ClInclude>
     <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOPickUpComponent.cpp">
       <Filter>Source\DUCKDUCKKAZOO</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOPickUpComponent.h">
+    <ClInclude Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOPickUpComponent.h">
       <Filter>Source\DUCKDUCKKAZOO</Filter>
-    </ClCompile>
+    </ClInclude>
     <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOProjectile.cpp">
       <Filter>Source\DUCKDUCKKAZOO</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOProjectile.h">
+    <ClInclude Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOProjectile.h">
       <Filter>Source\DUCKDUCKKAZOO</Filter>
-    </ClCompile>
+    </ClInclude>
     <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOWeaponComponent.cpp">
       <Filter>Source\DUCKDUCKKAZOO</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOWeaponComponent.h">
+    <ClInclude Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOWeaponComponent.h">
       <Filter>Source\DUCKDUCKKAZOO</Filter>
-    </ClCompile>
+    </ClInclude>
   </ItemGroup>
 </Project>
