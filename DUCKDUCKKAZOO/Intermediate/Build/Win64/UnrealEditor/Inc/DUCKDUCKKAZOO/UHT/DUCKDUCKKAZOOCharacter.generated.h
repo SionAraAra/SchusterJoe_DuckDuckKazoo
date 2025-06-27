@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class ADUCKDUCKKAZOOCharacter **************************************************
 DUCKDUCKKAZOO_API UClass* Z_Construct_UClass_ADUCKDUCKKAZOOCharacter_NoRegister();
 
-#define FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOCharacter_h_22_INCLASS_NO_PURE_DECLS \
+#define FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOCharacter_h_22_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesADUCKDUCKKAZOOCharacter(); \
 	friend struct Z_Construct_UClass_ADUCKDUCKKAZOOCharacter_Statics; \
@@ -30,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(ADUCKDUCKKAZOOCharacter)
 
 
-#define FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOCharacter_h_22_ENHANCED_CONSTRUCTORS \
+#define FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOCharacter_h_22_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ADUCKDUCKKAZOOCharacter(ADUCKDUCKKAZOOCharacter&&) = delete; \
 	ADUCKDUCKKAZOOCharacter(const ADUCKDUCKKAZOOCharacter&) = delete; \
@@ -40,12 +40,12 @@ public: \
 	NO_API virtual ~ADUCKDUCKKAZOOCharacter();
 
 
-#define FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOCharacter_h_19_PROLOG
-#define FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOCharacter_h_22_GENERATED_BODY \
+#define FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOCharacter_h_19_PROLOG
+#define FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOCharacter_h_22_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOCharacter_h_22_INCLASS_NO_PURE_DECLS \
-	FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOCharacter_h_22_ENHANCED_CONSTRUCTORS \
+	FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOCharacter_h_22_INCLASS_NO_PURE_DECLS \
+	FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOCharacter_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -55,6 +55,6 @@ class ADUCKDUCKKAZOOCharacter;
 // ********** End Class ADUCKDUCKKAZOOCharacter ****************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOCharacter_h
+#define CURRENT_FILE_ID FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOCharacter_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

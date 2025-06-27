@@ -272,14 +272,14 @@ UDUCKDUCKKAZOOPickUpComponent::~UDUCKDUCKKAZOOPickUpComponent() {}
 // ********** End Class UDUCKDUCKKAZOOPickUpComponent **********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h__Script_DUCKDUCKKAZOO_Statics
+struct Z_CompiledInDeferFile_FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h__Script_DUCKDUCKKAZOO_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UDUCKDUCKKAZOOPickUpComponent, UDUCKDUCKKAZOOPickUpComponent::StaticClass, TEXT("UDUCKDUCKKAZOOPickUpComponent"), &Z_Registration_Info_UClass_UDUCKDUCKKAZOOPickUpComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDUCKDUCKKAZOOPickUpComponent), 3525589515U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h__Script_DUCKDUCKKAZOO_1208567327(TEXT("/Script/DUCKDUCKKAZOO"),
-	Z_CompiledInDeferFile_FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h__Script_DUCKDUCKKAZOO_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h__Script_DUCKDUCKKAZOO_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h__Script_DUCKDUCKKAZOO_1208567327(TEXT("/Script/DUCKDUCKKAZOO"),
+	Z_CompiledInDeferFile_FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h__Script_DUCKDUCKKAZOO_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h__Script_DUCKDUCKKAZOO_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // ********** End Registration *********************************************************************

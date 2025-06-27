@@ -2,6 +2,7 @@
 	"RemapUnityFiles": 
 	{
 		"Module.DUCKDUCKKAZOO.gen.cpp.obj": [
+			"CustomGameInstance.gen.cpp.obj",
 			"DUCKDUCKKAZOO.init.gen.cpp.obj",
 			"DUCKDUCKKAZOOCharacter.gen.cpp.obj",
 			"DUCKDUCKKAZOOGameMode.gen.cpp.obj",

@@ -22,20 +22,20 @@ class UPrimitiveComponent;
 struct FHitResult;
 
 // ********** Begin Delegate FOnPickUp *************************************************************
-#define FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h_12_DELEGATE \
+#define FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h_12_DELEGATE \
 DUCKDUCKKAZOO_API void FOnPickUp_DelegateWrapper(const FMulticastScriptDelegate& OnPickUp, ADUCKDUCKKAZOOCharacter* PickUpCharacter);
 
 
 // ********** End Delegate FOnPickUp ***************************************************************
 
 // ********** Begin Class UDUCKDUCKKAZOOPickUpComponent ********************************************
-#define FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execOnSphereBeginOverlap);
 
 
 DUCKDUCKKAZOO_API UClass* Z_Construct_UClass_UDUCKDUCKKAZOOPickUpComponent_NoRegister();
 
-#define FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h_17_INCLASS_NO_PURE_DECLS \
+#define FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUDUCKDUCKKAZOOPickUpComponent(); \
 	friend struct Z_Construct_UClass_UDUCKDUCKKAZOOPickUpComponent_Statics; \
@@ -46,7 +46,7 @@ public: \
 	DECLARE_SERIALIZER(UDUCKDUCKKAZOOPickUpComponent)
 
 
-#define FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h_17_ENHANCED_CONSTRUCTORS \
+#define FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h_17_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UDUCKDUCKKAZOOPickUpComponent(UDUCKDUCKKAZOOPickUpComponent&&) = delete; \
 	UDUCKDUCKKAZOOPickUpComponent(const UDUCKDUCKKAZOOPickUpComponent&) = delete; \
@@ -56,13 +56,13 @@ public: \
 	NO_API virtual ~UDUCKDUCKKAZOOPickUpComponent();
 
 
-#define FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h_14_PROLOG
-#define FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h_17_GENERATED_BODY \
+#define FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h_14_PROLOG
+#define FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h_17_INCLASS_NO_PURE_DECLS \
-	FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h_17_ENHANCED_CONSTRUCTORS \
+	FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h_17_INCLASS_NO_PURE_DECLS \
+	FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -72,6 +72,6 @@ class UDUCKDUCKKAZOOPickUpComponent;
 // ********** End Class UDUCKDUCKKAZOOPickUpComponent **********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h
+#define CURRENT_FILE_ID FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOPickUpComponent_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

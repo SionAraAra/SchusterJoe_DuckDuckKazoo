@@ -12,6 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <None Include="..\..\.gitignore" />
+    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -33,6 +34,12 @@
     <Filter Include="Source\DUCKDUCKKAZOO">
       <UniqueIdentifier>{879158BA-8789-3FED-9532-5CA364F09608}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\CustomGameInstance.cpp">
+      <Filter>Source\DUCKDUCKKAZOO</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DUCKDUCKKAZOO\CustomGameInstance.h">
+      <Filter>Source\DUCKDUCKKAZOO</Filter>
+    </ClInclude>
     <None Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOO.Build.cs">
       <Filter>Source\DUCKDUCKKAZOO</Filter>
     </None>

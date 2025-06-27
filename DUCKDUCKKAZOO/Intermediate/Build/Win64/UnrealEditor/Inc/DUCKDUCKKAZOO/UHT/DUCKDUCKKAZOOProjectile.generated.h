@@ -21,13 +21,13 @@ class UPrimitiveComponent;
 struct FHitResult;
 
 // ********** Begin Class ADUCKDUCKKAZOOProjectile *************************************************
-#define FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOProjectile_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOProjectile_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execOnHit);
 
 
 DUCKDUCKKAZOO_API UClass* Z_Construct_UClass_ADUCKDUCKKAZOOProjectile_NoRegister();
 
-#define FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOProjectile_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOProjectile_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesADUCKDUCKKAZOOProjectile(); \
 	friend struct Z_Construct_UClass_ADUCKDUCKKAZOOProjectile_Statics; \
@@ -40,7 +40,7 @@ public: \
 
 
 
-#define FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOProjectile_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOProjectile_h_15_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ADUCKDUCKKAZOOProjectile(ADUCKDUCKKAZOOProjectile&&) = delete; \
 	ADUCKDUCKKAZOOProjectile(const ADUCKDUCKKAZOOProjectile&) = delete; \
@@ -50,13 +50,13 @@ public: \
 	NO_API virtual ~ADUCKDUCKKAZOOProjectile();
 
 
-#define FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOProjectile_h_12_PROLOG
-#define FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOProjectile_h_15_GENERATED_BODY \
+#define FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOProjectile_h_12_PROLOG
+#define FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOProjectile_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOProjectile_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOProjectile_h_15_INCLASS_NO_PURE_DECLS \
-	FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOProjectile_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOProjectile_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOProjectile_h_15_INCLASS_NO_PURE_DECLS \
+	FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOProjectile_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -66,6 +66,6 @@ class ADUCKDUCKKAZOOProjectile;
 // ********** End Class ADUCKDUCKKAZOOProjectile ***************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Users_joesc_Documents_GitHub_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOProjectile_h
+#define CURRENT_FILE_ID FID_Users_joesc_Documents_DuckDuckKazoo_DUCKDUCKKAZOO_Source_DUCKDUCKKAZOO_DUCKDUCKKAZOOProjectile_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
