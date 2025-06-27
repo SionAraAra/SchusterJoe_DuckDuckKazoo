@@ -64,12 +64,12 @@ private:
 	class UWidget* MainMenuWidget;
 
 	UPROPERTY(meta = (BindWidget))
-	class UWidget* JoinMenuWidget;
+	class UWidget* LocalPlayWidget;
 
 	UPROPERTY(meta = (BindWidget))
-	class UWidget* GameTypeWidget;
+	class UWidget* OnlinePlayWidget;
 
-
+	void setMode(int mode);
 	
 
 	TSubclassOf<UUserWidget> UserWidgetClass;
@@ -90,6 +90,14 @@ private:
 	UFUNCTION()
 	void ConfirmJoin();
 
+	UFUNCTION()
+	void PlayLocal();
+	UFUNCTION()
+	void PlayOnline();
+	UFUNCTION()
+	void PlayAlone();
+	UFUNCTION()
+	void Quit();
 	UPROPERTY()
 	TArray<UServerDisplayRow*> ServerRowWidgets;
 

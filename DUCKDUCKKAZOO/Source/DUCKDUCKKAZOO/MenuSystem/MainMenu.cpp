@@ -9,12 +9,13 @@
 #include "Components/EditableTextBox.h"
 #include "Components/ScrollBox.h"
 #include "UObject/ConstructorHelpers.h"
+#include "Kismet/KismetSystemLibrary.h"
 #include "Components/WidgetSwitcher.h"
 
 
 UMainMenu::UMainMenu(const FObjectInitializer& ObjectInitializer):Super(ObjectInitializer)
 {
-	ConstructorHelpers::FClassFinder<UServerDisplayRow> ServerRowBPClass(TEXT("/Game/OwnContent/UI/WBP_ServerDisplayRow.WBP_ServerDisplayRow_C"));
+	ConstructorHelpers::FClassFinder<UServerDisplayRow> ServerRowBPClass(TEXT("/Game/OwnContent/Player/UI/WBP_ServerDisplayRow.WBP_ServerDisplayRow_C"));
  	if (ServerRowBPClass.Succeeded())
  	{
  		ServerRowClass = ServerRowBPClass.Class;
@@ -91,7 +92,49 @@ bool UMainMenu::Initialize()
 	{
 		UE_LOG(LogTemp, Error, TEXT("ConfirmButton is null"));
 	}
+
+	if (LocalButton)
+	{
+		LocalButton->OnClicked.AddDynamic(this, &UMainMenu::PlayLocal);
+		UE_LOG(LogTemp, Display, TEXT("ConfirmButton is bound"));
+	}
+	else
+	{
+		UE_LOG(LogTemp, Error, TEXT("ConfirmButton is null"));
+	}
+	if (SinglePlayerButton)
+	{
+		SinglePlayerButton->OnClicked.AddDynamic(this, &UMainMenu::PlayAlone);
+		UE_LOG(LogTemp, Display, TEXT("ConfirmButton is bound"));
+	}
+	else
+	{
+		UE_LOG(LogTemp, Error, TEXT("ConfirmButton is null"));
+	}
+	if (OnlineButton)
+	{
+		OnlineButton->OnClicked.AddDynamic(this, &UMainMenu::PlayOnline);
+		UE_LOG(LogTemp, Display, TEXT("ConfirmButton is bound"));
+	}
+	else
+	{
+		UE_LOG(LogTemp, Error, TEXT("ConfirmButton is null"));
+	}
+	if (QuitButton)
+	{
+		QuitButton->OnClicked.AddDynamic(this, &UMainMenu::Quit);
+		UE_LOG(LogTemp, Display, TEXT("ConfirmButton is bound"));
+	}
+	else
+	{
+		UE_LOG(LogTemp, Error, TEXT("ConfirmButton is null"));
+	}
 	return true;
+}
+
+void UMainMenu::setMode(int mode)
+{
+	GameInstance->setGameMode(mode);
 }
 
 void UMainMenu::SetActiveWidget(int index)
@@ -115,9 +158,9 @@ void UMainMenu::OpenJoinScreen()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Mother Glados! Open join screen requested"));
 	
-	if (MainSwitcher && JoinMenuWidget)
+	if (MainSwitcher && LocalPlayWidget)
 	{
-		MainSwitcher->SetActiveWidget(JoinMenuWidget);
+		MainSwitcher->SetActiveWidget(LocalPlayWidget);
 		if (GameInstance)
 		{
 			UE_LOG(LogTemp, Warning, TEXT("SearchingAvailableSessions in open joinscreen"))
@@ -188,6 +231,27 @@ void UMainMenu::ConfirmJoin()
 	{
 		GameInstance->Join(SelectedServerIndex);
 	}
+}
+
+void UMainMenu::PlayLocal()
+{
+	setMode(1);
+}
+
+void UMainMenu::PlayOnline()
+{
+	setMode(2);
+}
+
+void UMainMenu::PlayAlone()
+{
+	setMode(0);
+}
+
+void UMainMenu::Quit()
+{
+	APlayerController* PC = GetWorld()->GetFirstPlayerController();
+	UKismetSystemLibrary::QuitGame(GetWorld(), PC, EQuitPreference::Quit, true);
 }
 
 void UMainMenu::Setup()

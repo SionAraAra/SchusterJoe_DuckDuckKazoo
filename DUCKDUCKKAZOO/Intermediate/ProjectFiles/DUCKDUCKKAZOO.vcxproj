@@ -288,6 +288,10 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\DUCKDUCKKAZOO\MenuSystem\MainMenu.h"/>
+    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\MenuSystem\SplashScreenWidget.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DUCKDUCKKAZOO\MenuSystem\SplashScreenWidget.h" />
     <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\Private\CustomGameInstance.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>

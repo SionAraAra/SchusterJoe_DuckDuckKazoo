@@ -7,6 +7,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "Blueprint/UserWidget.h"
 #include "../MenuSystem/MainMenu.h"
+#include "../MenuSystem/SplashScreenWidget.h"
 #include "OnlineSubsystem.h"
 #include "Interfaces/OnlineSessionInterface.h"
 #include "OnlineSessionSettings.h"
@@ -16,7 +17,7 @@ const FName UCustomGameInstance::SESSION_NAME = FName("GAMENAME");
 
 UCustomGameInstance::UCustomGameInstance(){
 	UE_LOG(LogTemp, Warning, TEXT("UCustomGameInstance has been called."));
-	ConstructorHelpers::FClassFinder<UUserWidget> MenuBPClass(TEXT("/Game/ThirdPerson/UI/WBP_MainMenu.WBP_MainMenu_C"));
+	ConstructorHelpers::FClassFinder<UUserWidget> MenuBPClass(TEXT("/Game/OwnContent/Player/UI/WBP_MainMenu.WBP_MainMenu_C"));
 	if (MenuBPClass.Succeeded())
 	{
 		WidgetClass = MenuBPClass.Class;
@@ -89,8 +90,10 @@ void UCustomGameInstance::CreateSession()
 	OnCreateSessionCompleteDelegateHandle = SessionInterface->AddOnCreateSessionCompleteDelegate_Handle(OnCreateSessionCompleteDelegate);
 
 	OnlineSessionSettings = MakeShareable(new FOnlineSessionSettings());
+	
 	OnlineSessionSettings->bIsLANMatch = true;
 	OnlineSessionSettings->bUsesPresence = true;
+	OnlineSessionSettings->bAllowJoinInProgress = true;
 	OnlineSessionSettings->bAllowJoinInProgress = true;
 	OnlineSessionSettings->bAllowJoinViaPresence = true;
 	OnlineSessionSettings->NumPublicConnections = 4;
@@ -99,6 +102,12 @@ void UCustomGameInstance::CreateSession()
 	UE_LOG(LogTemp, Warning, TEXT("Attempting to create session..."));
 	SessionInterface->CreateSession(0, SESSION_NAME, *OnlineSessionSettings);
 }
+
+void UCustomGameInstance::setGameMode(int mode)
+{
+	GameMode = mode;
+}
+
 void UCustomGameInstance::Host()
 {
 	if (!SessionInterface.IsValid()) return;
@@ -268,6 +277,41 @@ void UCustomGameInstance::LoadMainMenu()
 	}
 
 	
+}
+
+void UCustomGameInstance::LoadSplashScreen()
+{
+	UWorld* World = GetWorld();
+	APlayerController* PlayerController = World->GetFirstPlayerController();
+	if (!PlayerController)
+	{
+		UE_LOG(LogTemp, Error, TEXT("Failed to get PlayerController."));
+	}
+
+	if (WidgetClass && World)
+	{
+		if (!SplashScreenWidget)
+		{
+			SplashScreenWidget = CreateWidget<USplashScreenWidget>(World, WidgetClass);
+		}
+
+		if (SplashScreenWidget)
+		{
+			SplashScreenWidget->AddToViewport();
+			SplashScreenWidget->Setup();
+			
+			UE_LOG(LogTemp, Log, TEXT("Main menu loaded and added to viewport."));
+		}
+		else
+		{
+			UE_LOG(LogTemp, Log, TEXT("Failed to load main menu widget."));
+		}
+	}
+	else
+	{
+		UE_LOG(LogTemp, Log, TEXT("WidgetClass or GetWorld() is null."));
+	}
+
 }
 
 void UCustomGameInstance::OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result)

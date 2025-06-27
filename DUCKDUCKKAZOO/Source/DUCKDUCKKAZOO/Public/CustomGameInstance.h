@@ -16,7 +16,7 @@ UCLASS()
 class DUCKDUCKKAZOO_API UCustomGameInstance : public UGameInstance
 {
 	GENERATED_BODY()
-	UCustomGameInstance ();
+	UCustomGameInstance();
 	virtual void Init() override;
 	void AddOnScreenDebugMessage(
 		int32 Key,
@@ -37,11 +37,20 @@ public:
 	
 	UFUNCTION(Exec, BlueprintCallable, Category = "Menu")
 		void LoadMainMenu();
+
+	UFUNCTION(Exec, BlueprintCallable, Category = "Menu")
+		void LoadSplashScreen();
+
+	int GameMode;
+	void setGameMode(int mode);
 UFUNCTION(Exec)
 	void SearchAvailableSessions();
 private:
 	UPROPERTY()
 	class UMainMenu* MainMenuWidget;
+
+	UPROPERTY()
+	class USplashScreenWidget* SplashScreenWidget;
 
 	static const FName SESSION_NAME;
 	
@@ -51,6 +60,8 @@ private:
 	void CreateSession();
 	
 	IOnlineSessionPtr SessionInterface;
+
+	
 
 	
 	FOnCreateSessionCompleteDelegate OnCreateSessionCompleteDelegate;

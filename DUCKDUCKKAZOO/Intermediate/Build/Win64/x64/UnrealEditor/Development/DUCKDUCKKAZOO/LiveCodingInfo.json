@@ -10,6 +10,7 @@
 			"DUCKDUCKKAZOOWeaponComponent.gen.cpp.obj",
 			"MainMenu.gen.cpp.obj",
 			"ServerDisplayRow.gen.cpp.obj",
+			"SplashScreenWidget.gen.cpp.obj",
 			"DUCKDUCKKAZOO.init.gen.cpp.obj"
 		]
 	}
