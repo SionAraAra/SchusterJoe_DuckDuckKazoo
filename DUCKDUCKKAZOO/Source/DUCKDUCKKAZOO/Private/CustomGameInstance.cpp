@@ -29,6 +29,16 @@ UCustomGameInstance::UCustomGameInstance(){
 		UE_LOG(LogTemp, Error, TEXT("Failed to load Widget class."));
 	}
 
+	ConstructorHelpers::FClassFinder<UUserWidget> SplashScreenBPClass(TEXT("/Game/OwnContent/Player/UI/WBP_SplashScreen.WBP_SplashScreen_C"));
+	if (SplashScreenBPClass.Succeeded())
+	{
+		SplashWidgetClass = SplashScreenBPClass.Class;
+		UE_LOG(LogTemp, Log, TEXT("Successfully loaded Widget class."));
+	}
+	else
+	{
+		UE_LOG(LogTemp, Error, TEXT("Failed to load Widget class."));
+	}
 }
 
 void UCustomGameInstance::Init()
@@ -67,16 +77,36 @@ void UCustomGameInstance::Init()
 			MainMenuWidget->SetGameInstance(this);
 			MainMenuWidget->AddToViewport();
 
-			UE_LOG(LogTemp, Log, TEXT("Main menu widget created and added to viewport."));
+			UE_LOG(LogTemp, Log, TEXT("(MainMenu)Main menu widget created and added to viewport."));
 		}
 		else
 		{
-			UE_LOG(LogTemp, Error, TEXT("Failed to create main menu widget."));
+			UE_LOG(LogTemp, Error, TEXT("(MainMenu)Failed to create main menu widget."));
 		}
 	}
 	else
 	{
-		UE_LOG(LogTemp, Error, TEXT("WidgetClass is null or GetWorld() failed."));
+		UE_LOG(LogTemp, Error, TEXT("(MainMenu)WidgetClass is null or GetWorld() failed."));
+	}
+
+	if (SplashWidgetClass && GetWorld())
+	{
+		SplashScreenWidget = CreateWidget<USplashScreenWidget>(GetWorld(), SplashWidgetClass);
+		if (SplashScreenWidget)
+		{
+			SplashScreenWidget->SetGameInstance(this);
+			SplashScreenWidget->AddToViewport();
+
+			UE_LOG(LogTemp, Log, TEXT("(SplashScreen) menu widget created and added to viewport."));
+		}
+		else
+		{
+			UE_LOG(LogTemp, Error, TEXT("(SplashScreen)Failed to create main menu widget."));
+		}
+	}
+	else
+	{
+		UE_LOG(LogTemp, Error, TEXT("(SplashScreen)WidgetClass is null or GetWorld() failed."));
 	}
 }
 void UCustomGameInstance::CreateSession()
@@ -175,7 +205,7 @@ void UCustomGameInstance::OnCreateSessionComplete(FName SessionName, bool Succes
 		UWorld* World = GetWorld();
 		if (World)
 		{
-			World->ServerTravel("/Game/OwnContent/Maps/Lobby?listen");
+			World->ServerTravel("/Game/OwnContent/Map/PlayMap?listen");
 		}
 		SearchAvailableSessions();
 	}
@@ -322,7 +352,7 @@ void UCustomGameInstance::LoadSplashScreen()
 		UE_LOG(LogTemp, Error, TEXT("Failed to get PlayerController."));
 	}
 
-	if (WidgetClass && World)
+	if (SplashWidgetClass && World)
 	{
 		if (!SplashScreenWidget)
 		{

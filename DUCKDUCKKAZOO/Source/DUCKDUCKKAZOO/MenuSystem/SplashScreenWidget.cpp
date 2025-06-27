@@ -2,25 +2,20 @@
 
 
 #include "SplashScreenWidget.h"
+
 #include "UObject\ConstructorHelpers.h"
 
 
 USplashScreenWidget::USplashScreenWidget(const FObjectInitializer& ObjectInitializer): Super(ObjectInitializer)
 {
-	ConstructorHelpers::FClassFinder<UUserWidget> SplashScreenBPClass(TEXT("/Game/OwnContent/Player/UI/WBP_SplashScreen.WBP_SplashScreen_C"));
-	if (SplashScreenBPClass.Succeeded())
-	{
-		WidgetClass = SplashScreenBPClass.Class;
-		UE_LOG(LogTemp, Log, TEXT("Successfully loaded Widget class."));
-	}
-	else
-	{
-		UE_LOG(LogTemp, Error, TEXT("Failed to load Widget class."));
-	}
+	
 
 	
 }
-
+void USplashScreenWidget::SetGameInstance(class UCustomGameInstance* Instance)
+{
+	GameInstance = Instance;
+}
 void USplashScreenWidget::NativeConstruct()
 {
 	Super::NativeConstruct();
@@ -37,8 +32,10 @@ void USplashScreenWidget::StartGameMenu()
 	UWorld* World = GetWorld();
 	if (World)
 	{
-		World->ServerTravel("/Game/OwnContent/Maps/MainMenu?listen");
+		World->ServerTravel("/Game/OwnContent/Map/MainMenu?listen");
 	}
+
+	
 }
 
 void USplashScreenWidget::Setup()

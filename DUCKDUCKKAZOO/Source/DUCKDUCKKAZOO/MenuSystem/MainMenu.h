@@ -34,6 +34,9 @@ private:
 	class UButton* HostButton;
 
 	UPROPERTY(meta = (BindWidget))
+	class UButton* HostOnlineButton;
+
+	UPROPERTY(meta = (BindWidget))
 	class UButton* JoinButton;
 
 	UPROPERTY(meta = (BindWidget))
@@ -84,6 +87,8 @@ private:
 	
 	UFUNCTION()
 	void Hosting();
+	UFUNCTION()
+	void OnlineHosting();
 	UFUNCTION()
 	void OpenLocalPlay();
 	UFUNCTION()

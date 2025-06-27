@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
+#include "../Public/CustomGameInstance.h"
 #include "SplashScreenWidget.generated.h"
 
 /**
@@ -22,11 +23,12 @@ class DUCKDUCKKAZOO_API USplashScreenWidget : public UUserWidget
 	void StartGameMenu();
 
 	void NativeConstruct();
-	
+	UCustomGameInstance* GameInstance;
 	
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "UI")
 	TSubclassOf<UUserWidget> WidgetClass;
-
+	
+	void SetGameInstance(class UCustomGameInstance* Instance);
 	void Setup();
 };

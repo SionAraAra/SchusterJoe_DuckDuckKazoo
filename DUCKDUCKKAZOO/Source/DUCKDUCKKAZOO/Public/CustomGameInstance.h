@@ -46,7 +46,7 @@ public:
 
 	int GameMode;
 	void setGameMode(int mode);
-	void Join(const FString& IP);
+	void Joining(const FString& IP);
 UFUNCTION(Exec)
 	void SearchAvailableSessions();
 private:

@@ -11,9 +11,9 @@ public class DUCKDUCKKAZOO : ModuleRules
 		PublicDependencyModuleNames.AddRange(new string[]
 		{
 			"Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", "UMG",
-			"OnlineSubsystem", "OnlineSubsystemUtils"
+			"OnlineSubsystem", "OnlineSubsystemUtils","OnlineSubsystemSteam"
 		});
 
-		DynamicallyLoadedModuleNames.Add("OnlineSubsystemSteam");
+		//DynamicallyLoadedModuleNames.Add("OnlineSubsystemSteam");
 	}
 }

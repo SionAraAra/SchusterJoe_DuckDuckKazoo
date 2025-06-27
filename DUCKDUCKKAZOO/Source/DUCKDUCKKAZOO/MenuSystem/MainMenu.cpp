@@ -130,6 +130,15 @@ bool UMainMenu::Initialize()
 	{
 		UE_LOG(LogTemp, Error, TEXT("QuitButton is null"));
 	}
+	if (HostOnlineButton)
+	{
+		QuitButton->OnClicked.AddDynamic(this, &UMainMenu::OnlineHosting);
+		UE_LOG(LogTemp, Display, TEXT("HostOnlineButton is bound"));
+	}
+	else
+	{
+		UE_LOG(LogTemp, Error, TEXT("HostOnlineButton is null"));
+	}
 	return true;
 }
 
@@ -153,6 +162,17 @@ void UMainMenu::Hosting()
 		
 	}
 	
+}
+
+void UMainMenu::OnlineHosting()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Mother Glados! I host"));
+	SetGameInstance(Cast<UCustomGameInstance>(GetWorld()->GetGameInstance()));
+	if (GameInstance)
+	{
+		GameInstance->Host();
+		
+	}
 }
 
 void UMainMenu::Joining()
