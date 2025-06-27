@@ -6,10 +6,14 @@ public class DUCKDUCKKAZOO : ModuleRules
 {
 	public DUCKDUCKKAZOO(ReadOnlyTargetRules Target) : base(Target)
 	{
-		
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", "UMG", "OnlineSubsystem", "OnlineSubsystemUtils" });
+		PublicDependencyModuleNames.AddRange(new string[]
+		{
+			"Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", "UMG",
+			"OnlineSubsystem", "OnlineSubsystemUtils"
+		});
+
 		DynamicallyLoadedModuleNames.Add("OnlineSubsystemSteam");
 	}
 }

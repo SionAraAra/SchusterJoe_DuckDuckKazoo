@@ -5,6 +5,7 @@
 
 #include "AssetTypeCategories.h"
 #include "Components/Button.h"
+#include "Components/EditableText.h"
 #include "Components/Widget.h"
 #include "Components/EditableTextBox.h"
 #include "Components/ScrollBox.h"
@@ -65,7 +66,7 @@ bool UMainMenu::Initialize()
 
 	if (JoinButton)
 	{
-		JoinButton->OnClicked.AddDynamic(this, &UMainMenu::OpenJoinScreen);
+		JoinButton->OnClicked.AddDynamic(this, &UMainMenu::Joining);
 		UE_LOG(LogTemp, Display, TEXT("JoinButton is bound"));
 	}
 	else
@@ -95,39 +96,39 @@ bool UMainMenu::Initialize()
 
 	if (LocalButton)
 	{
-		LocalButton->OnClicked.AddDynamic(this, &UMainMenu::PlayLocal);
-		UE_LOG(LogTemp, Display, TEXT("ConfirmButton is bound"));
+		LocalButton->OnClicked.AddDynamic(this, &UMainMenu::OpenLocalPlay);
+		UE_LOG(LogTemp, Display, TEXT("LocalButton is bound"));
 	}
 	else
 	{
-		UE_LOG(LogTemp, Error, TEXT("ConfirmButton is null"));
+		UE_LOG(LogTemp, Error, TEXT("LocalButton is null"));
 	}
 	if (SinglePlayerButton)
 	{
 		SinglePlayerButton->OnClicked.AddDynamic(this, &UMainMenu::PlayAlone);
-		UE_LOG(LogTemp, Display, TEXT("ConfirmButton is bound"));
+		UE_LOG(LogTemp, Display, TEXT("SinglePlayerButton is bound"));
 	}
 	else
 	{
-		UE_LOG(LogTemp, Error, TEXT("ConfirmButton is null"));
+		UE_LOG(LogTemp, Error, TEXT("SinglePlayerButton is null"));
 	}
 	if (OnlineButton)
 	{
-		OnlineButton->OnClicked.AddDynamic(this, &UMainMenu::PlayOnline);
-		UE_LOG(LogTemp, Display, TEXT("ConfirmButton is bound"));
+		OnlineButton->OnClicked.AddDynamic(this, &UMainMenu::OpenOnlinePlay);
+		UE_LOG(LogTemp, Display, TEXT("OnlineButton is bound"));
 	}
 	else
 	{
-		UE_LOG(LogTemp, Error, TEXT("ConfirmButton is null"));
+		UE_LOG(LogTemp, Error, TEXT("OnlineButton is null"));
 	}
 	if (QuitButton)
 	{
 		QuitButton->OnClicked.AddDynamic(this, &UMainMenu::Quit);
-		UE_LOG(LogTemp, Display, TEXT("ConfirmButton is bound"));
+		UE_LOG(LogTemp, Display, TEXT("QuitButton is bound"));
 	}
 	else
 	{
-		UE_LOG(LogTemp, Error, TEXT("ConfirmButton is null"));
+		UE_LOG(LogTemp, Error, TEXT("QuitButton is null"));
 	}
 	return true;
 }
@@ -154,16 +155,49 @@ void UMainMenu::Hosting()
 	
 }
 
-void UMainMenu::OpenJoinScreen()
+void UMainMenu::Joining()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Mother Glados! Open join screen requested"));
+UE_LOG(LogTemp, Warning, TEXT("Mother Glados! I join"));
+	SetGameInstance(Cast<UCustomGameInstance>(GetWorld()->GetGameInstance()));
+	if (GameInstance)
+	{
+		GameInstance->Joining(IP_TextBox->GetText().ToString());
+		
+	}
+}
+
+void UMainMenu::OpenLocalPlay()
+{
+	setMode(1);
+	UE_LOG(LogTemp, Warning, TEXT("Mother Glados! Open localplay screen requested"));
 	
 	if (MainSwitcher && LocalPlayWidget)
 	{
 		MainSwitcher->SetActiveWidget(LocalPlayWidget);
 		if (GameInstance)
 		{
-			UE_LOG(LogTemp, Warning, TEXT("SearchingAvailableSessions in open joinscreen"))
+			UE_LOG(LogTemp, Warning, TEXT("SearchingAvailableSessions in open localplay"))
+			GameInstance->SearchAvailableSessions();
+		}
+		
+		UE_LOG(LogTemp, Warning, TEXT("Mother Glados! I switch to localplay options"));
+	}else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Mother Glados! There was an error changing screens"))
+	}
+}
+
+void UMainMenu::OpenOnlinePlay()
+{
+	setMode(2);
+	UE_LOG(LogTemp, Warning, TEXT("Mother Glados! Open onlineplay screen requested"));
+	
+	if (MainSwitcher && OnlinePlayWidget)
+	{
+		MainSwitcher->SetActiveWidget(OnlinePlayWidget);
+		if (GameInstance)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("SearchingAvailableSessions in open onlineplay"))
 			GameInstance->SearchAvailableSessions();
 		}
 		for (int Index = 0 ; Index < 4 ; Index++)
@@ -171,7 +205,7 @@ void UMainMenu::OpenJoinScreen()
 			
 			AddServerRow("Server "+ FString::FromInt(Index), Index);
 		}
-		UE_LOG(LogTemp, Warning, TEXT("Mother Glados! I switch to join options"));
+		UE_LOG(LogTemp, Warning, TEXT("Mother Glados! I switch to onlineplay options"));
 	}else
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Mother Glados! There was an error changing screens"))
@@ -233,19 +267,16 @@ void UMainMenu::ConfirmJoin()
 	}
 }
 
-void UMainMenu::PlayLocal()
-{
-	setMode(1);
-}
-
-void UMainMenu::PlayOnline()
-{
-	setMode(2);
-}
 
 void UMainMenu::PlayAlone()
 {
 	setMode(0);
+	SetGameInstance(Cast<UCustomGameInstance>(GetWorld()->GetGameInstance()));
+    	if (GameInstance)
+    	{
+    		GameInstance->Host();
+    		
+    	}
 }
 
 void UMainMenu::Quit()

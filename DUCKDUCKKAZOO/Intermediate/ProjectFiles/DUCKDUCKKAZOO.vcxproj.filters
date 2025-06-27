@@ -82,10 +82,10 @@
     <ClInclude Include="..\..\Source\DUCKDUCKKAZOO\MenuSystem\MainMenu.h">
       <Filter>Source\DUCKDUCKKAZOO\MenuSystem</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\MenuSystem\SpashScreenWidget.cpp">
+    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\MenuSystem\SplashScreenWidget.cpp">
       <Filter>Source\DUCKDUCKKAZOO\MenuSystem</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\DUCKDUCKKAZOO\MenuSystem\SpashScreenWidget.h">
+    <ClInclude Include="..\..\Source\DUCKDUCKKAZOO\MenuSystem\SplashScreenWidget.h">
       <Filter>Source\DUCKDUCKKAZOO\MenuSystem</Filter>
     </ClInclude>
     <Filter Include="Source\DUCKDUCKKAZOO\Private">

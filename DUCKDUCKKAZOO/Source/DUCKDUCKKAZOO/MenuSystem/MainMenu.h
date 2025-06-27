@@ -54,6 +54,8 @@ private:
 	UPROPERTY(meta = (BindWidget))
 	class UButton* QuitButton;
 
+	UPROPERTY(meta = (BindWidget))
+	class UEditableText* IP_TextBox;
 	
 	UCustomGameInstance* GameInstance;
 
@@ -83,17 +85,16 @@ private:
 	UFUNCTION()
 	void Hosting();
 	UFUNCTION()
-	void OpenJoinScreen();
-
+	void OpenLocalPlay();
+	UFUNCTION()
+	void OpenOnlinePlay();
 	UFUNCTION()
 	void Canceling();
 	UFUNCTION()
 	void ConfirmJoin();
+	UFUNCTION()
+	void Joining();
 
-	UFUNCTION()
-	void PlayLocal();
-	UFUNCTION()
-	void PlayOnline();
 	UFUNCTION()
 	void PlayAlone();
 	UFUNCTION()

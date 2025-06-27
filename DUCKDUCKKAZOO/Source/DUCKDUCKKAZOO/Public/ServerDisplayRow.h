@@ -37,6 +37,8 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void SetIsSelected(bool bSelected);
 
+	UFUNCTION(BlueprintCallable)
+	bool GetIsSelected();
 	
 	void SetServerName(const FString& Name);
 	void Setup(class UMainMenu* InMainMenuParent, uint32 InSelectedIndex);
@@ -46,6 +48,6 @@ private:
 	void OnClicked();
 	
 	
-	
+	 
 	
 };

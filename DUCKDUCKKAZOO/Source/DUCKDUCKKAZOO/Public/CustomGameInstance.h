@@ -35,6 +35,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "UI")
 	TSubclassOf<UUserWidget> WidgetClass;
 	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "UI")
+    TSubclassOf<UUserWidget> SplashWidgetClass;
+	
 	UFUNCTION(Exec, BlueprintCallable, Category = "Menu")
 		void LoadMainMenu();
 
@@ -43,6 +46,7 @@ public:
 
 	int GameMode;
 	void setGameMode(int mode);
+	void Join(const FString& IP);
 UFUNCTION(Exec)
 	void SearchAvailableSessions();
 private:
@@ -87,4 +91,5 @@ private:
 	FDelegateHandle OnJoinSessionCompleteDelegateHandle;
 	void OnJoinSessionComplete(FName SessionName, EOnJoinSessionCompleteResult::Type Result);
 	void joinSession(FName SESSION_NAME);
+	
 };

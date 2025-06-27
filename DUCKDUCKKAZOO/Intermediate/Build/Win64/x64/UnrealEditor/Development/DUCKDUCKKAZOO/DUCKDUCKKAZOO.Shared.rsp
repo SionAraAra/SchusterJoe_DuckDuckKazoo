@@ -299,6 +299,9 @@
 /I "../Plugins/Online/OnlineSubsystemUtils/Source"
 /I "../Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Classes"
 /I "../Plugins/Online/OnlineSubsystemUtils/Source/OnlineSubsystemUtils/Public"
+/I "../Plugins/Online/OnlineSubsystemSteam/Intermediate/Build/Win64/UnrealEditor/Inc/OnlineSubsystemSteam/UHT"
+/I "../Plugins/Online/OnlineSubsystemSteam/Source"
+/I "../Plugins/Online/OnlineSubsystemSteam/Source/Public"
 /I "C:/Users/joesc/Documents/DuckDuckKazoo/DUCKDUCKKAZOO/Intermediate/Build/Win64/x64/DUCKDUCKKAZOOEditor/Development/UnrealEd"
 /external:W0
 /external:I "ThirdParty/GuidelinesSupportLibrary/GSL-1144/include"

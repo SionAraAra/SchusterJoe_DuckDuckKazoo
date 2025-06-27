@@ -33,6 +33,11 @@ void UServerDisplayRow::SetIsSelected(bool bSelected)
 	isSelected = bSelected;
 }
 
+bool UServerDisplayRow::GetIsSelected()
+{
+	return isSelected;
+}
+
 
 void UServerDisplayRow::SetServerName(const FString& Name)
 {

@@ -11,6 +11,7 @@
 #include "OnlineSubsystem.h"
 #include "Interfaces/OnlineSessionInterface.h"
 #include "OnlineSessionSettings.h"
+#include "OnlineSubsystemUtils.h"
 #include "UObject\ConstructorHelpers.h"
 
 const FName UCustomGameInstance::SESSION_NAME = FName("GAMENAME");
@@ -90,14 +91,34 @@ void UCustomGameInstance::CreateSession()
 	OnCreateSessionCompleteDelegateHandle = SessionInterface->AddOnCreateSessionCompleteDelegate_Handle(OnCreateSessionCompleteDelegate);
 
 	OnlineSessionSettings = MakeShareable(new FOnlineSessionSettings());
+	if (GameMode==1)
+	{
+		OnlineSessionSettings->bIsLANMatch = true;
+		OnlineSessionSettings->bUsesPresence = false;
+		OnlineSessionSettings->bAllowJoinInProgress = false;
+		OnlineSessionSettings->bAllowJoinViaPresence = false;
+		OnlineSessionSettings->NumPublicConnections = 4;
+		OnlineSessionSettings->bShouldAdvertise = true;	
+	}else if (GameMode==2)
+	{
+		OnlineSessionSettings->bIsLANMatch = false;
+		OnlineSessionSettings->bUsesPresence = true;
+        OnlineSessionSettings->bAllowJoinInProgress = true;
+        OnlineSessionSettings->bAllowJoinViaPresence = true;
+		OnlineSessionSettings->NumPublicConnections = 4;
+    	OnlineSessionSettings->bShouldAdvertise = true;	
+	}else
+	{
+		OnlineSessionSettings->bIsLANMatch = false;
+		OnlineSessionSettings->bUsesPresence = false;
+		OnlineSessionSettings->bAllowJoinInProgress = false;
+		OnlineSessionSettings->bAllowJoinViaPresence = false;
+		OnlineSessionSettings->NumPublicConnections = 1;
+        OnlineSessionSettings->bShouldAdvertise = false;	
+	}
 	
-	OnlineSessionSettings->bIsLANMatch = true;
-	OnlineSessionSettings->bUsesPresence = true;
-	OnlineSessionSettings->bAllowJoinInProgress = true;
-	OnlineSessionSettings->bAllowJoinInProgress = true;
-	OnlineSessionSettings->bAllowJoinViaPresence = true;
-	OnlineSessionSettings->NumPublicConnections = 4;
-	OnlineSessionSettings->bShouldAdvertise = true;	
+	
+	
 
 	UE_LOG(LogTemp, Warning, TEXT("Attempting to create session..."));
 	SessionInterface->CreateSession(0, SESSION_NAME, *OnlineSessionSettings);
@@ -129,7 +150,20 @@ void UCustomGameInstance::Host()
 }
 
 
-
+void UCustomGameInstance::Joining(const FString& IP)
+{
+	if (GEngine)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Mother Glados! Requesting to join"));
+	}
+	APlayerController* Controller = GetFirstLocalPlayerController();
+	if (Controller)
+	{
+		Controller->ClientTravel(*IP, TRAVEL_Absolute);
+	}
+	
+	
+};
 
 void UCustomGameInstance::OnCreateSessionComplete(FName SessionName, bool Success)
 {
@@ -292,7 +326,7 @@ void UCustomGameInstance::LoadSplashScreen()
 	{
 		if (!SplashScreenWidget)
 		{
-			SplashScreenWidget = CreateWidget<USplashScreenWidget>(World, WidgetClass);
+			SplashScreenWidget = CreateWidget<USplashScreenWidget>(World, SplashWidgetClass);
 		}
 
 		if (SplashScreenWidget)
