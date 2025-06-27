@@ -34,12 +34,6 @@
     <Filter Include="Source\DUCKDUCKKAZOO">
       <UniqueIdentifier>{879158BA-8789-3FED-9532-5CA364F09608}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\CustomGameInstance.cpp">
-      <Filter>Source\DUCKDUCKKAZOO</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\DUCKDUCKKAZOO\CustomGameInstance.h">
-      <Filter>Source\DUCKDUCKKAZOO</Filter>
-    </ClInclude>
     <None Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOO.Build.cs">
       <Filter>Source\DUCKDUCKKAZOO</Filter>
     </None>
@@ -78,6 +72,33 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\DUCKDUCKKAZOO\DUCKDUCKKAZOOWeaponComponent.h">
       <Filter>Source\DUCKDUCKKAZOO</Filter>
+    </ClInclude>
+    <Filter Include="Source\DUCKDUCKKAZOO\MenuSystem">
+      <UniqueIdentifier>{0997F1BA-CE78-31BA-8459-1882923C1CD0}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\MenuSystem\MainMenu.cpp">
+      <Filter>Source\DUCKDUCKKAZOO\MenuSystem</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DUCKDUCKKAZOO\MenuSystem\MainMenu.h">
+      <Filter>Source\DUCKDUCKKAZOO\MenuSystem</Filter>
+    </ClInclude>
+    <Filter Include="Source\DUCKDUCKKAZOO\Private">
+      <UniqueIdentifier>{6D6DA47D-5630-3FF4-A4A0-9AB87E010D32}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\Private\CustomGameInstance.cpp">
+      <Filter>Source\DUCKDUCKKAZOO\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\DUCKDUCKKAZOO\Private\ServerDisplayRow.cpp">
+      <Filter>Source\DUCKDUCKKAZOO\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\DUCKDUCKKAZOO\Public">
+      <UniqueIdentifier>{D2D65DE6-AE9B-349C-9C11-729D1A8C1908}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\DUCKDUCKKAZOO\Public\CustomGameInstance.h">
+      <Filter>Source\DUCKDUCKKAZOO\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\DUCKDUCKKAZOO\Public\ServerDisplayRow.h">
+      <Filter>Source\DUCKDUCKKAZOO\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

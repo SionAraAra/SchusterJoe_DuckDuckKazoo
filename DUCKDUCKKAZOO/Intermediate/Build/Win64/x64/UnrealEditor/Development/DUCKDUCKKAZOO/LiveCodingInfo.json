@@ -3,12 +3,14 @@
 	{
 		"Module.DUCKDUCKKAZOO.gen.cpp.obj": [
 			"CustomGameInstance.gen.cpp.obj",
-			"DUCKDUCKKAZOO.init.gen.cpp.obj",
 			"DUCKDUCKKAZOOCharacter.gen.cpp.obj",
 			"DUCKDUCKKAZOOGameMode.gen.cpp.obj",
 			"DUCKDUCKKAZOOPickUpComponent.gen.cpp.obj",
 			"DUCKDUCKKAZOOProjectile.gen.cpp.obj",
-			"DUCKDUCKKAZOOWeaponComponent.gen.cpp.obj"
+			"DUCKDUCKKAZOOWeaponComponent.gen.cpp.obj",
+			"MainMenu.gen.cpp.obj",
+			"ServerDisplayRow.gen.cpp.obj",
+			"DUCKDUCKKAZOO.init.gen.cpp.obj"
 		]
 	}
 }
